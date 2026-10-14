@@ -1,0 +1,26 @@
+[
+  {
+    "id": "sc-a0000000-0000-0000-0000-000000000001",
+    "name": "Database Failure",
+    "description": "Simulates a primary database outage cascading to dependent API and web services.",
+    "created_at": "2024-01-01T00:00:00+00:00"
+  },
+  {
+    "id": "sc-b0000000-0000-0000-0000-000000000002",
+    "name": "Shared Dependency Failure",
+    "description": "Simulates a shared authentication service failure affecting multiple upstream consumers.",
+    "created_at": "2024-01-01T00:01:00+00:00"
+  },
+  {
+    "id": "sc-c0000000-0000-0000-0000-000000000003",
+    "name": "Alternative Path Available",
+    "description": "Simulates a failure where one service has an apparent alternative inbound path.",
+    "created_at": "2024-01-01T00:02:00+00:00"
+  },
+  {
+    "id": "sc-d0000000-0000-0000-0000-000000000004",
+    "name": "Incomplete Evidence",
+    "description": "Simulates a failure where stale dependency data triggers data quality warnings.",
+    "created_at": "2024-01-01T00:03:00+00:00"
+  }
+]

@@ -1,0 +1,110 @@
+[
+  {
+    "id": "e-a-01",
+    "scenario_id": "sc-a0000000-0000-0000-0000-000000000001",
+    "source_component_id": "c-orderdb-00000000-0000-0000-0000-000000000001",
+    "target_component_id": "c-orderservice-00000000-0000-0000-0000-000000000002",
+    "label": "OrderService depends on OrderDB",
+    "evidence_source": "simulated_demo",
+    "confirmation_status": "inferred"
+  },
+  {
+    "id": "e-a-02",
+    "scenario_id": "sc-a0000000-0000-0000-0000-000000000001",
+    "source_component_id": "c-orderservice-00000000-0000-0000-0000-000000000002",
+    "target_component_id": "c-shoppingapp-00000000-0000-0000-0000-000000000003",
+    "label": "ShoppingApp depends on OrderService",
+    "evidence_source": "simulated_demo",
+    "confirmation_status": "inferred"
+  },
+  {
+    "id": "e-a-03",
+    "scenario_id": "sc-a0000000-0000-0000-0000-000000000001",
+    "source_component_id": "c-orderdb-00000000-0000-0000-0000-000000000001",
+    "target_component_id": "c-reportingsvc-00000000-0000-0000-0000-000000000004",
+    "label": "ReportingService depends on OrderDB",
+    "evidence_source": "simulated_demo",
+    "confirmation_status": "inferred"
+  },
+  {
+    "id": "e-b-01",
+    "scenario_id": "sc-b0000000-0000-0000-0000-000000000002",
+    "source_component_id": "c-authsvc-00000000-0000-0000-0000-000000000005",
+    "target_component_id": "c-ordersvc-b-00000000-0000-0000-0000-000000000006",
+    "label": "OrderService depends on AuthService",
+    "evidence_source": "simulated_demo",
+    "confirmation_status": "inferred"
+  },
+  {
+    "id": "e-b-02",
+    "scenario_id": "sc-b0000000-0000-0000-0000-000000000002",
+    "source_component_id": "c-authsvc-00000000-0000-0000-0000-000000000005",
+    "target_component_id": "c-paymentsvc-b-00000000-0000-0000-0000-000000000007",
+    "label": "PaymentService depends on AuthService",
+    "evidence_source": "simulated_demo",
+    "confirmation_status": "inferred"
+  },
+  {
+    "id": "e-b-03",
+    "scenario_id": "sc-b0000000-0000-0000-0000-000000000002",
+    "source_component_id": "c-authsvc-00000000-0000-0000-0000-000000000005",
+    "target_component_id": "c-usersvc-b-00000000-0000-0000-0000-000000000008",
+    "label": "UserService depends on AuthService",
+    "evidence_source": "simulated_demo",
+    "confirmation_status": "inferred"
+  },
+  {
+    "id": "e-b-04",
+    "scenario_id": "sc-b0000000-0000-0000-0000-000000000002",
+    "source_component_id": "c-ordersvc-b-00000000-0000-0000-0000-000000000006",
+    "target_component_id": "c-shoppingapp-b-00000000-0000-0000-0000-000000000009",
+    "label": "ShoppingApp depends on OrderService",
+    "evidence_source": "simulated_demo",
+    "confirmation_status": "inferred"
+  },
+  {
+    "id": "e-b-05",
+    "scenario_id": "sc-b0000000-0000-0000-0000-000000000002",
+    "source_component_id": "c-paymentsvc-b-00000000-0000-0000-0000-000000000007",
+    "target_component_id": "c-shoppingapp-b-00000000-0000-0000-0000-000000000009",
+    "label": "ShoppingApp depends on PaymentService",
+    "evidence_source": "simulated_demo",
+    "confirmation_status": "inferred"
+  },
+  {
+    "id": "e-b-06",
+    "scenario_id": "sc-b0000000-0000-0000-0000-000000000002",
+    "source_component_id": "c-usersvc-b-00000000-0000-0000-0000-000000000008",
+    "target_component_id": "c-shoppingapp-b-00000000-0000-0000-0000-000000000009",
+    "label": "ShoppingApp depends on UserService",
+    "evidence_source": "simulated_demo",
+    "confirmation_status": "inferred"
+  },
+  {
+    "id": "e-c-01",
+    "scenario_id": "sc-c0000000-0000-0000-0000-000000000003",
+    "source_component_id": "c-userdb-c-00000000-0000-0000-0000-000000000010",
+    "target_component_id": "c-inventorysvc-c-00000000-0000-0000-0000-000000000012",
+    "label": "InventoryService primary path via UserDB",
+    "evidence_source": "simulated_demo",
+    "confirmation_status": "inferred"
+  },
+  {
+    "id": "e-c-02",
+    "scenario_id": "sc-c0000000-0000-0000-0000-000000000003",
+    "source_component_id": "c-orderdb-c-00000000-0000-0000-0000-000000000011",
+    "target_component_id": "c-inventorysvc-c-00000000-0000-0000-0000-000000000012",
+    "label": "InventoryService alternative path via OrderDB",
+    "evidence_source": "simulated_demo",
+    "confirmation_status": "inferred"
+  },
+  {
+    "id": "e-d-01",
+    "scenario_id": "sc-d0000000-0000-0000-0000-000000000004",
+    "source_component_id": "c-orderdb-d-00000000-0000-0000-0000-000000000013",
+    "target_component_id": "c-reporting-d-00000000-0000-0000-0000-000000000014",
+    "label": "ReportingService depends on OrderDB (stale evidence)",
+    "evidence_source": "simulated_demo",
+    "confirmation_status": "unknown"
+  }
+]
